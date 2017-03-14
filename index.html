@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Repaso1</title>
+</head>
+<body>
+  <h1>Formulario</h1>
+  <div>
+    <form onsubmit="return false">
+      Nombre
+    <input class="all" type="nombre" id="nombre" name="nombre" required="">
+      <br><br>
+      Apellido
+    <input class="all" type="apellido" id="apellido" name="apellido" required="">
+      <br><br>
+      Edad
+    <input class="all" type="edad" id="edad" name="edad" pattern=".{2,}" required="">
+      <br><br>
+    <input type="radio" id="genero" name="genero" value="Masculino" checked="" >Masculino
+    <input type="radio" id="genero" name="genero" value="Masculino" checked="" >Femenino
+    <br><br>
+    </select>
+    Ciudad
+    <input class="all" type="ciudad"  id="ciudad" name="ciudad" required="">
+    <br><br>
+    Pais
+    <input class="all" type="pais" id="pais" name="pais" required="">
+      <br><br>
+      <button id="enviarficha" onclick="enviarFicha()">Enviar Datos</button>
+      <div id="form"></div>
+    </form>
+  </div>
+  <script src="js/main.js"></script>
+
+  </script>
+</body>
+</html>
